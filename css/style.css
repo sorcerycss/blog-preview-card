@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Figtree";
+  background: #f4d04e;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Layout */
+
+.container {
+  border: 2px solid magenta;
+  max-width: 327px;
+  margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  border: 1px solid #111111;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #ffffff;
+  padding: 1.5em;
+  border-radius: 20px;
+  box-shadow: 7px 7px 0 #111111;
+  /* box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2); */
+}
+
+.art {
+  border-radius: 10px;
+  min-width: 279px;
+}
+
+.author {
+  border: 2px solid magenta;
+  display: flex;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+}
+
+.name {
+  border: 2px solid magenta;
+  font-size: 0.875rem;
+  font-weight: 900;
+  line-height: 150%;
+  color: #111111;
+  margin: 0;
+  margin-left: 1em;
+}
+
+/* Typography */
+
+h1 {
+  border: 2px solid magenta;
+  font-size: 1.25rem;
+  font-weight: 900;
+  line-height: 150%;
+  color: #111111;
+  margin: 0;
+}
+
+h1 + p {
+  border: 2px solid magenta;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: #6b6b6b;
+  margin: 12px 0 24px;
+}
+
+.category {
+  border: 2px solid magenta;
+  background: #f4d04e;
+  font-size: 0.75rem;
+  font-weight: 900;
+  line-height: 150%;
+  padding: 0.25em 0.75em;
+  border-radius: 5px;
+  margin: 24px 0 0;
+}
+
+.info {
+  border: 2px solid magenta;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 150%;
+  margin: 12px 0;
+}
