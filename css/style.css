@@ -6,13 +6,19 @@
 
 body {
   margin: 0;
-  font-family: "Figtree";
+  font-family: "Figtree", serif;
   background: #f4d04e;
 }
 
 img {
   max-width: 100%;
   display: block;
+}
+
+.avatar {
+  align-self: center;
+  width: 32px;
+  height: 32px;
 }
 
 /* Layout */
@@ -48,22 +54,24 @@ img {
   display: flex;
 }
 
-.avatar {
-  align-self: center;
-  width: 32px;
-  height: 32px;
-}
+/* Typography */
 
-.name {
-  align-self: center;
-  font-size: 0.875rem;
+.category {
+  background: #f4d04e;
+  font-size: 0.75rem;
   font-weight: 900;
   line-height: 150%;
-  color: #111111;
-  margin: 5.5px 0 5.5px 12px;
+  border-radius: 5px;
+  padding: 0.25em 0.75em;
+  margin: 24px 0 0;
 }
 
-/* Typography */
+.info {
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 150%;
+  margin: 12px 0;
+}
 
 h1 {
   font-size: 1.25rem;
@@ -81,19 +89,30 @@ h1 + p {
   margin: 12px 0 24px;
 }
 
-.category {
-  background: #f4d04e;
-  font-size: 0.75rem;
+.name {
+  align-self: center;
+  font-size: 0.875rem;
   font-weight: 900;
   line-height: 150%;
-  border-radius: 5px;
-  padding: 0.25em 0.75em;
-  margin: 24px 0 0;
+  color: #111111;
+  margin: 5.5px 0 5.5px 12px;
 }
 
-.info {
-  font-size: 0.75rem;
-  font-weight: 500;
-  line-height: 150%;
-  margin: 12px 0;
+/* Media queries */
+@media (min-width: 600px) {
+  .container {
+    max-width: 384px;
+  }
+
+  .category {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h1 + p {
+    font-size: 16px;
+  }
 }
